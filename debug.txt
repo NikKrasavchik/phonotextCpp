@@ -1,0 +1,519 @@
+AbstractEvent = {ABCMeta} <class '__main__.AbstractEvent'>
+CONFIG = {dict: 3} {'rus': [<__main__.ModifyEvent object at 0x000002AE3AC6B650>, <__main__.JoinEvent object at 0x000002AE3AC6B610>, <__main__.NumberEvent object at 0x000002AE3AC41590>, <__main__.SameEvent object at 0x000002AE3AC71710>, <__main__.SPmaxEvent object at 0x000002
+ 'rus' = {list: 8} [<__main__.ModifyEvent object at 0x000002AE3AC6B650>, <__main__.JoinEvent object at 0x000002AE3AC6B610>, <__main__.NumberEvent object at 0x000002AE3AC41590>, <__main__.SameEvent object at 0x000002AE3AC71710>, <__main__.SPmaxEvent object at 0x000002AE3AC71A
+  0 = {ModifyEvent} <__main__.ModifyEvent object at 0x000002AE3AC6B650>
+   rules = {defaultdict: 35} defaultdict(<class 'dict'>, {'ь': {'и': 'ьjи', 'е': 'ьjэ', 'ё': 'ьjо', 'ю': 'ьjу', 'я': 'ьjа'}, 'ъ': {'и': 'ъjи', 'е': 'ъjэ', 'ё': 'ъjо', 'ю': 'ъjу', 'я': 'ъjа'}, ' ': {'е': ' jэ', 'ё': ' jо', 'ю': ' jу', 'я': ' jа'}, 'а': {'е': 'аjэ', 'ё': 'аjо', 'ю': 'аjу', 'я': 'аjа'}, 'о': {'е': 'оjэ', 'ё': 'оjо', 'ю': 'оjу', 'я': 'оjа'}, 'у': {'е': 'уjэ', 'ё': 'уjо', 'ю': 'уjу', 'я': 'уjа'}, 'ы': {'е': 'ыjэ', 'ё': 'ыjо', 'ю': 'ыjу', 'я': 'ыjа'}, 'и': {'е': 'иjэ', 'ё': 'иjо', 'ю': 'иjу', 'я': 'иjа'}, 'э': {'е': 'эjэ', 'ё': 'эjо', 'ю': 'эjу', 'я': 'эjа'}, 'е': {'е': 'еjэ', 'ё': 'еjо', 'ю': 'еjу', 'я': 'еjа'}, 'ё': {'е': 'ёjэ', 'ё': 'ёjо', 'ю': 'ёjу', 'я': 'ёjа'}, 'ю': {'е': 'юjэ', 'ё': 'юjо', 'ю': 'юjу', 'я': 'юjа'}, 'я': {'е': 'яjэ', 'ё': 'яjо', 'ю': 'яjу', 'я': 'яjа'}, 'ш': {'я': 'ш҄а', 'ю': 'ш҄у', 'ё': 'ш҄о'}, 'щ': {'я': 'щ҄а', 'ю': 'щ҄у', 'ё': 'щ҄о'}, 'р': {'я': 'р҄а', 'ю': 'р҄у', 'ё': 'р҄о'}, 'с': {'я': 'с҄а', 'ю': 'с҄у', 'ё': 'с҄о'}, 'т': {'я': 'т҄а', 'ю': 'т҄у', 'ё': 'т҄о'}, 'ф': {'я': 'ф҄а',...
+    default_factory = {type} <class 'dict'>
+    'ь' = {dict: 5} {'и': 'ьjи', 'е': 'ьjэ', 'ё': 'ьjо', 'ю': 'ьjу', 'я': 'ьjа'}
+    'ъ' = {dict: 5} {'и': 'ъjи', 'е': 'ъjэ', 'ё': 'ъjо', 'ю': 'ъjу', 'я': 'ъjа'}
+    ' ' = {dict: 4} {'е': ' jэ', 'ё': ' jо', 'ю': ' jу', 'я': ' jа'}
+    'а' = {dict: 4} {'е': 'аjэ', 'ё': 'аjо', 'ю': 'аjу', 'я': 'аjа'}
+    'о' = {dict: 4} {'е': 'оjэ', 'ё': 'оjо', 'ю': 'оjу', 'я': 'оjа'}
+    'у' = {dict: 4} {'е': 'уjэ', 'ё': 'уjо', 'ю': 'уjу', 'я': 'уjа'}
+    'ы' = {dict: 4} {'е': 'ыjэ', 'ё': 'ыjо', 'ю': 'ыjу', 'я': 'ыjа'}
+    'и' = {dict: 4} {'е': 'иjэ', 'ё': 'иjо', 'ю': 'иjу', 'я': 'иjа'}
+    'э' = {dict: 4} {'е': 'эjэ', 'ё': 'эjо', 'ю': 'эjу', 'я': 'эjа'}
+    'е' = {dict: 4} {'е': 'еjэ', 'ё': 'еjо', 'ю': 'еjу', 'я': 'еjа'}
+    'ё' = {dict: 4} {'е': 'ёjэ', 'ё': 'ёjо', 'ю': 'ёjу', 'я': 'ёjа'}
+    'ю' = {dict: 4} {'е': 'юjэ', 'ё': 'юjо', 'ю': 'юjу', 'я': 'юjа'}
+    'я' = {dict: 4} {'е': 'яjэ', 'ё': 'яjо', 'ю': 'яjу', 'я': 'яjа'}
+    'ш' = {dict: 3} {'я': 'ш҄а', 'ю': 'ш҄у', 'ё': 'ш҄о'}
+    'щ' = {dict: 3} {'я': 'щ҄а', 'ю': 'щ҄у', 'ё': 'щ҄о'}
+    'р' = {dict: 3} {'я': 'р҄а', 'ю': 'р҄у', 'ё': 'р҄о'}
+    'с' = {dict: 3} {'я': 'с҄а', 'ю': 'с҄у', 'ё': 'с҄о'}
+    'т' = {dict: 3} {'я': 'т҄а', 'ю': 'т҄у', 'ё': 'т҄о'}
+    'ф' = {dict: 3} {'я': 'ф҄а', 'ю': 'ф҄у', 'ё': 'ф҄о'}
+    'х' = {dict: 3} {'я': 'х҄а', 'ю': 'х҄у', 'ё': 'х҄о'}
+    'ц' = {dict: 3} {'я': 'ц҄а', 'ю': 'ц҄у', 'ё': 'ц҄о'}
+    'ч' = {dict: 3} {'я': 'ч҄а', 'ю': 'ч҄у', 'ё': 'ч҄о'}
+    'j' = {dict: 3} {'я': 'j҄а', 'ю': 'j҄у', 'ё': 'j҄о'}
+    'й' = {dict: 3} {'я': 'й҄а', 'ю': 'й҄у', 'ё': 'й҄о'}
+    'к' = {dict: 3} {'я': 'к҄а', 'ю': 'к҄у', 'ё': 'к҄о'}
+    'л' = {dict: 3} {'я': 'л҄а', 'ю': 'л҄у', 'ё': 'л҄о'}
+    'м' = {dict: 3} {'я': 'м҄а', 'ю': 'м҄у', 'ё': 'м҄о'}
+    'н' = {dict: 3} {'я': 'н҄а', 'ю': 'н҄у', 'ё': 'н҄о'}
+    'п' = {dict: 3} {'я': 'п҄а', 'ю': 'п҄у', 'ё': 'п҄о'}
+    'б' = {dict: 3} {'я': 'б҄а', 'ю': 'б҄у', 'ё': 'б҄о'}
+    'в' = {dict: 3} {'я': 'в҄а', 'ю': 'в҄у', 'ё': 'в҄о'}
+    'г' = {dict: 3} {'я': 'г҄а', 'ю': 'г҄у', 'ё': 'г҄о'}
+    'д' = {dict: 3} {'я': 'д҄а', 'ю': 'д҄у', 'ё': 'д҄о'}
+    'ж' = {dict: 3} {'я': 'ж҄а', 'ю': 'ж҄у', 'ё': 'ж҄о'}
+    'з' = {dict: 3} {'я': 'з҄а', 'ю': 'з҄у', 'ё': 'з҄о'}
+    __len__ = {int} 35
+  1 = {JoinEvent} <__main__.JoinEvent object at 0x000002AE3AC6B610>
+   rules = {defaultdict: 1} defaultdict(<class 'dict'>, {'т': 'тс'})
+    default_factory = {type} <class 'dict'>
+    'т' = {str} 'тс'
+    __len__ = {int} 1
+  2 = {NumberEvent} <__main__.NumberEvent object at 0x000002AE3AC41590>
+   consonants = {set: 23} {'з', 'м', 'к', 'тс', 'ш', 'р', 'г', 'й', 'j', 'щ', 'п', 'ч', 'в', 'ж', 'л', 'т', 'ф', 'с', 'б', 'д', 'х', 'ц', 'н'}
+    {str} 'з'
+    {str} 'м'
+    {str} 'к'
+    {str} 'тс'
+    {str} 'ш'
+    {str} 'р'
+    {str} 'г'
+    {str} 'й'
+    {str} 'j'
+    {str} 'щ'
+    {str} 'п'
+    {str} 'ч'
+    {str} 'в'
+    {str} 'ж'
+    {str} 'л'
+    {str} 'т'
+    {str} 'ф'
+    {str} 'с'
+    {str} 'б'
+    {str} 'д'
+    {str} 'х'
+    {str} 'ц'
+    {str} 'н'
+    __len__ = {int} 23
+   volves = {set: 12} {'э', 'у', 'о', 'ы', '\n', 'а', 'е', 'ю', 'и', 'я', '--endl', 'ё'}
+    {str} 'э'
+    {str} 'у'
+    {str} 'о'
+    {str} 'ы'
+    {str} '\n'
+    {str} 'а'
+    {str} 'е'
+    {str} 'ю'
+    {str} 'и'
+    {str} 'я'
+    {str} '--endl'
+    {str} 'ё'
+    __len__ = {int} 12
+   words = {set: 35} {'з', 'м', 'ы', 'к', 'ю', 'и', 'у', 'тс', 'ш', 'р', '\n', 'е', 'г', 'й', 'ё', 'э', 'j', 'о', 'а', 'щ', 'п', 'ч', 'я', 'в', 'ж', 'л', 'т', 'ф', 'с', 'б', 'д', 'х', '--endl', 'ц', 'н'}
+    {str} 'з'
+    {str} 'м'
+    {str} 'ы'
+    {str} 'к'
+    {str} 'ю'
+    {str} 'и'
+    {str} 'у'
+    {str} 'тс'
+    {str} 'ш'
+    {str} 'р'
+    {str} '\n'
+    {str} 'е'
+    {str} 'г'
+    {str} 'й'
+    {str} 'ё'
+    {str} 'э'
+    {str} 'j'
+    {str} 'о'
+    {str} 'а'
+    {str} 'щ'
+    {str} 'п'
+    {str} 'ч'
+    {str} 'я'
+    {str} 'в'
+    {str} 'ж'
+    {str} 'л'
+    {str} 'т'
+    {str} 'ф'
+    {str} 'с'
+    {str} 'б'
+    {str} 'д'
+    {str} 'х'
+    {str} '--endl'
+    {str} 'ц'
+    {str} 'н'
+    __len__ = {int} 35
+  3 = {SameEvent} <__main__.SameEvent object at 0x000002AE3AC71710>
+   rules = {dict: 37} {'а': 'а', 'б': 'п', 'в': 'в', 'г': 'к', 'д': 'т', 'е': 'е', 'ё': 'ё', 'ж': 'ч', 'з': 'с', 'и': 'и', 'й': 'j', 'к': 'к', 'л': 'л', 'м': 'м', 'н': 'н', 'о': 'о', 'п': 'п', 'р': 'р', 'с': 'с', 'т': 'т', 'у': 'у', 'ф': 'в', 'х': 'к', 'ц': 'ц', 'ч': 'ч', 'ш': 'ч', 'щ': 'ч', 'ы': 'ы', 'э': 'э', 'ю': 'ю', 'я': 'я', '--endl': '--endl', '\n': '--endl', '|': '|', ' ': '|', 'j': 'j', 'тс': 'ц'}
+    'а' = {str} 'а'
+    'б' = {str} 'п'
+    'в' = {str} 'в'
+    'г' = {str} 'к'
+    'д' = {str} 'т'
+    'е' = {str} 'е'
+    'ё' = {str} 'ё'
+    'ж' = {str} 'ч'
+    'з' = {str} 'с'
+    'и' = {str} 'и'
+    'й' = {str} 'j'
+    'к' = {str} 'к'
+    'л' = {str} 'л'
+    'м' = {str} 'м'
+    'н' = {str} 'н'
+    'о' = {str} 'о'
+    'п' = {str} 'п'
+    'р' = {str} 'р'
+    'с' = {str} 'с'
+    'т' = {str} 'т'
+    'у' = {str} 'у'
+    'ф' = {str} 'в'
+    'х' = {str} 'к'
+    'ц' = {str} 'ц'
+    'ч' = {str} 'ч'
+    'ш' = {str} 'ч'
+    'щ' = {str} 'ч'
+    'ы' = {str} 'ы'
+    'э' = {str} 'э'
+    'ю' = {str} 'ю'
+    'я' = {str} 'я'
+    '--endl' = {str} '--endl'
+    '\n' = {str} '--endl'
+    '|' = {str} '|'
+    ' ' = {str} '|'
+    'j' = {str} 'j'
+    'тс' = {str} 'ц'
+    __len__ = {int} 37
+  4 = {SPmaxEvent} <__main__.SPmaxEvent object at 0x000002AE3AC71AD0>
+  5 = {CombinationsEvent} <__main__.CombinationsEvent object at 0x000002AE3AC71810>
+  6 = {RepeatEvent} <__main__.RepeatEvent object at 0x000002AE3AC71C50>
+  7 = {RepeatRecountEvent} <__main__.RepeatRecountEvent object at 0x000002AE3AC71CD0>
+  __len__ = {int} 8
+ 'eng' = {list: 8} [<__main__.ModifyEvent object at 0x000002AE3AC6B510>, <__main__.JoinEvent object at 0x000002AE3AC6B4D0>, <__main__.NumberEvent object at 0x000002AE3AC7E310>, <__main__.SameEvent object at 0x000002AE3AC7CA50>, <__main__.SPmaxEvent object at 0x000002AE3AC7E8
+  0 = {ModifyEvent} <__main__.ModifyEvent object at 0x000002AE3AC6B510>
+   rules = {defaultdict: 0} defaultdict(<class 'dict'>, {})
+    default_factory = {type} <class 'dict'>
+    __len__ = {int} 0
+  1 = {JoinEvent} <__main__.JoinEvent object at 0x000002AE3AC6B4D0>
+   rules = {defaultdict: 8} defaultdict(<class 'dict'>, {'a': 'ay', 'e': 'ey', 'i': 'iy', 'o': 'oy', 'y': 'yu', 'u': 'uy', 'c': 'ck', 'p': 'ph'})
+    default_factory = {type} <class 'dict'>
+    'a' = {str} 'ay'
+    'e' = {str} 'ey'
+    'i' = {str} 'iy'
+    'o' = {str} 'oy'
+    'y' = {str} 'yu'
+    'u' = {str} 'uy'
+    'c' = {str} 'ck'
+    'p' = {str} 'ph'
+    __len__ = {int} 8
+  2 = {NumberEvent} <__main__.NumberEvent object at 0x000002AE3AC7E310>
+   consonants = {set: 23} {'q', 'p', 'w', 'r', 'ch', 'ph', 'g', 't', 'd', 'h', 'j', 'b', 'm', 'k', 'f', 's', 'ck', 'x', 'v', 'z', 'n', 'l', 'c'}
+    {str} 'q'
+    {str} 'p'
+    {str} 'w'
+    {str} 'r'
+    {str} 'ch'
+    {str} 'ph'
+    {str} 'g'
+    {str} 't'
+    {str} 'd'
+    {str} 'h'
+    {str} 'j'
+    {str} 'b'
+    {str} 'm'
+    {str} 'k'
+    {str} 'f'
+    {str} 's'
+    {str} 'ck'
+    {str} 'x'
+    {str} 'v'
+    {str} 'z'
+    {str} 'n'
+    {str} 'l'
+    {str} 'c'
+    __len__ = {int} 23
+   volves = {set: 26} {'ya', 'ie', 'ey', 'a', 'au', 'iy', 'oe', 'oy', '\n', 'uy', 'e', 'ay', 'yu', 'yi', 'ea', 'y', 'eu', 'oa', 'ou', 'i', 'o', 'u', 'yo', 'ye', '--endl', 'ee'}
+    {str} 'ya'
+    {str} 'ie'
+    {str} 'ey'
+    {str} 'a'
+    {str} 'au'
+    {str} 'iy'
+    {str} 'oe'
+    {str} 'oy'
+    {str} '\n'
+    {str} 'uy'
+    {str} 'e'
+    {str} 'ay'
+    {str} 'yu'
+    {str} 'yi'
+    {str} 'ea'
+    {str} 'y'
+    {str} 'eu'
+    {str} 'oa'
+    {str} 'ou'
+    {str} 'i'
+    {str} 'o'
+    {str} 'u'
+    {str} 'yo'
+    {str} 'ye'
+    {str} '--endl'
+    {str} 'ee'
+    __len__ = {int} 26
+   words = {set: 49} {'q', 'ya', 'p', 'ie', 'w', 'ey', 'r', 'a', 'au', 'iy', 'ch', 'oe', 'oy', 'ph', 'g', '\n', 'uy', 't', 'd', 'h', 'e', 'j', 'b', 'm', 'ay', 'yu', 'k', 'yi', 'ea', 'y', 'eu', 'oa', 'ou', 'f', 's', 'ck', 'i', 'x', 'o', 'u', 'yo', 'v', 'z', 'n', 'l', 'ye', '--endl', 'c', 'ee'}
+    {str} 'q'
+    {str} 'ya'
+    {str} 'p'
+    {str} 'ie'
+    {str} 'w'
+    {str} 'ey'
+    {str} 'r'
+    {str} 'a'
+    {str} 'au'
+    {str} 'iy'
+    {str} 'ch'
+    {str} 'oe'
+    {str} 'oy'
+    {str} 'ph'
+    {str} 'g'
+    {str} '\n'
+    {str} 'uy'
+    {str} 't'
+    {str} 'd'
+    {str} 'h'
+    {str} 'e'
+    {str} 'j'
+    {str} 'b'
+    {str} 'm'
+    {str} 'ay'
+    {str} 'yu'
+    {str} 'k'
+    {str} 'yi'
+    {str} 'ea'
+    {str} 'y'
+    {str} 'eu'
+    {str} 'oa'
+    {str} 'ou'
+    {str} 'f'
+    {str} 's'
+    {str} 'ck'
+    {str} 'i'
+    {str} 'x'
+    {str} 'o'
+    {str} 'u'
+    {str} 'yo'
+    {str} 'v'
+    {str} 'z'
+    {str} 'n'
+    {str} 'l'
+    {str} 'ye'
+    {str} '--endl'
+    {str} 'c'
+    {str} 'ee'
+    __len__ = {int} 49
+  3 = {SameEvent} <__main__.SameEvent object at 0x000002AE3AC7CA50>
+   rules = {dict: 33} {'a': 'a', 'b': 'b', 'c': 'c', 'd': 'd', 'e': 'e', 'f': 'f', 'g': 'g', 'h': 'h', 'i': 'i', 'j': 'j', 'k': 'k', 'l': 'l', 'm': 'm', 'n': 'n', 'o': 'o', 'p': 'b', 'q': 'q', 'r': 'r', 's': 's', 't': 'd', 'u': 'u', 'v': 'f', 'w': 'f', 'x': 'x', 'y': 'y', 'z': 'z', 'ph': 'f', 'ch': 'j', 'ck': 'k', '--endl': '--endl', '\n': '--endl', '|': '|', ' ': '|'}
+    'a' = {str} 'a'
+    'b' = {str} 'b'
+    'c' = {str} 'c'
+    'd' = {str} 'd'
+    'e' = {str} 'e'
+    'f' = {str} 'f'
+    'g' = {str} 'g'
+    'h' = {str} 'h'
+    'i' = {str} 'i'
+    'j' = {str} 'j'
+    'k' = {str} 'k'
+    'l' = {str} 'l'
+    'm' = {str} 'm'
+    'n' = {str} 'n'
+    'o' = {str} 'o'
+    'p' = {str} 'b'
+    'q' = {str} 'q'
+    'r' = {str} 'r'
+    's' = {str} 's'
+    't' = {str} 'd'
+    'u' = {str} 'u'
+    'v' = {str} 'f'
+    'w' = {str} 'f'
+    'x' = {str} 'x'
+    'y' = {str} 'y'
+    'z' = {str} 'z'
+    'ph' = {str} 'f'
+    'ch' = {str} 'j'
+    'ck' = {str} 'k'
+    '--endl' = {str} '--endl'
+    '\n' = {str} '--endl'
+    '|' = {str} '|'
+    ' ' = {str} '|'
+    __len__ = {int} 33
+  4 = {SPmaxEvent} <__main__.SPmaxEvent object at 0x000002AE3AC7E810>
+  5 = {CombinationsEvent} <__main__.CombinationsEvent object at 0x000002AE3AC7C290>
+  6 = {RepeatEvent} <__main__.RepeatEvent object at 0x000002AE3AC7C2D0>
+  7 = {RepeatRecountEvent} <__main__.RepeatRecountEvent object at 0x000002AE3AC7C410>
+  __len__ = {int} 8
+ 'latin' = {list: 8} [<__main__.ModifyEvent object at 0x000002AE3AC6B410>, <__main__.JoinEvent object at 0x000002AE3AC71F50>, <__main__.NumberEvent object at 0x000002AE3AC70690>, <__main__.SameEvent object at 0x000002AE3AC72990>, <__main__.SPmaxEvent object at 0x000002AE3AC725
+  0 = {ModifyEvent} <__main__.ModifyEvent object at 0x000002AE3AC6B410>
+   rules = {defaultdict: 28} defaultdict(<class 'dict'>, {'\n': {'z': '\nds'}, ' ': {'z': ' ds'}, 'q': {'z': 'qds'}, 'w': {'z': 'wds'}, 'e': {'z': 'eds'}, 'r': {'z': 'rds'}, 't': {'z': 'tds'}, 'y': {'z': 'yds'}, 'u': {'z': 'uds'}, 'i': {'z': 'ids'}, 'o': {'z': 'ods'}, 'p': {'z': 'pds'
+    default_factory = {type} <class 'dict'>
+    '\n' = {dict: 1} {'z': '\nds'}
+    ' ' = {dict: 1} {'z': ' ds'}
+    'q' = {dict: 1} {'z': 'qds'}
+    'w' = {dict: 1} {'z': 'wds'}
+    'e' = {dict: 1} {'z': 'eds'}
+    'r' = {dict: 1} {'z': 'rds'}
+    't' = {dict: 1} {'z': 'tds'}
+    'y' = {dict: 1} {'z': 'yds'}
+    'u' = {dict: 1} {'z': 'uds'}
+    'i' = {dict: 1} {'z': 'ids'}
+    'o' = {dict: 1} {'z': 'ods'}
+    'p' = {dict: 1} {'z': 'pds'}
+    'a' = {dict: 1} {'z': 'ads'}
+    's' = {dict: 1} {'z': 'sds'}
+    'd' = {dict: 1} {'z': 'dds'}
+    'f' = {dict: 1} {'z': 'fds'}
+    'g' = {dict: 1} {'z': 'gds'}
+    'h' = {dict: 1} {'z': 'hds'}
+    'j' = {dict: 1} {'z': 'jds'}
+    'k' = {dict: 1} {'z': 'kds'}
+    'z' = {dict: 1} {'z': 'zds'}
+    'l' = {dict: 1} {'z': 'lds'}
+    'x' = {dict: 1} {'z': 'xds'}
+    'c' = {dict: 1} {'z': 'cds'}
+    'v' = {dict: 1} {'z': 'vds'}
+    'b' = {dict: 1} {'z': 'bds'}
+    'n' = {dict: 1} {'z': 'nds'}
+    'm' = {dict: 1} {'z': 'mds'}
+    __len__ = {int} 28
+  1 = {JoinEvent} <__main__.JoinEvent object at 0x000002AE3AC71F50>
+   rules = {defaultdict: 6} defaultdict(<class 'dict'>, {'a': 'ae', 'o': 'oe', 'p': 'ph', 'c': 'ch', 'r': 'rh', 't': 'th'})
+    default_factory = {type} <class 'dict'>
+    'a' = {str} 'ae'
+    'o' = {str} 'oe'
+    'p' = {str} 'ph'
+    'c' = {str} 'ch'
+    'r' = {str} 'rh'
+    't' = {str} 'th'
+    __len__ = {int} 6
+  2 = {NumberEvent} <__main__.NumberEvent object at 0x000002AE3AC70690>
+   consonants = {set: 25} {'q', 'p', 'th', 'w', 'r', 'ch', 'ph', 'rh', 'g', 't', 'd', 'h', 'j', 'b', 'm', 'k', 'y', 'f', 's', 'x', 'v', 'z', 'n', 'l', 'c'}
+    {str} 'q'
+    {str} 'p'
+    {str} 'th'
+    {str} 'w'
+    {str} 'r'
+    {str} 'ch'
+    {str} 'ph'
+    {str} 'rh'
+    {str} 'g'
+    {str} 't'
+    {str} 'd'
+    {str} 'h'
+    {str} 'j'
+    {str} 'b'
+    {str} 'm'
+    {str} 'k'
+    {str} 'y'
+    {str} 'f'
+    {str} 's'
+    {str} 'x'
+    {str} 'v'
+    {str} 'z'
+    {str} 'n'
+    {str} 'l'
+    {str} 'c'
+    __len__ = {int} 25
+   volves = {set: 9} {'e', 'oe', 'i', '\n', 'o', 'u', 'ae', 'a', '--endl'}
+    {str} 'e'
+    {str} 'oe'
+    {str} 'i'
+    {str} '\n'
+    {str} 'o'
+    {str} 'u'
+    {str} 'ae'
+    {str} 'a'
+    {str} '--endl'
+    __len__ = {int} 9
+   words = {set: 34} {'q', 'p', 'th', 'w', 'r', 'a', 'ch', 'oe', 'ph', 'rh', 'g', '\n', 't', 'd', 'h', 'e', 'j', 'b', 'm', 'k', 'y', 'f', 's', 'i', 'x', 'o', 'u', 'ae', 'v', 'z', 'n', 'l', '--endl', 'c'}
+    {str} 'q'
+    {str} 'p'
+    {str} 'th'
+    {str} 'w'
+    {str} 'r'
+    {str} 'a'
+    {str} 'ch'
+    {str} 'oe'
+    {str} 'ph'
+    {str} 'rh'
+    {str} 'g'
+    {str} '\n'
+    {str} 't'
+    {str} 'd'
+    {str} 'h'
+    {str} 'e'
+    {str} 'j'
+    {str} 'b'
+    {str} 'm'
+    {str} 'k'
+    {str} 'y'
+    {str} 'f'
+    {str} 's'
+    {str} 'i'
+    {str} 'x'
+    {str} 'o'
+    {str} 'u'
+    {str} 'ae'
+    {str} 'v'
+    {str} 'z'
+    {str} 'n'
+    {str} 'l'
+    {str} '--endl'
+    {str} 'c'
+    __len__ = {int} 34
+  3 = {SameEvent} <__main__.SameEvent object at 0x000002AE3AC72990>
+   rules = {dict: 49} {'q': 'c', 'w': 'w', 'e': 'e', 'r': 'rh', 't': 'th', 'y': 'y', 'u': 'u', 'i': 'i', 'o': 'o', 'p': 'b', 'a': 'a', 's': 's', 'd': 'th', 'f': 'f', 'g': 'c', 'h': 'ch', 'j': 'j', 'k': 'c', 'l': 'l', 'z': 'z', 'x': 'c', 'c': 'c', 'v': 'f', 'b': 'b', 'n': 'n', '
+    'q' = {str} 'c'
+    'w' = {str} 'w'
+    'e' = {str} 'e'
+    'r' = {str} 'rh'
+    't' = {str} 'th'
+    'y' = {str} 'y'
+    'u' = {str} 'u'
+    'i' = {str} 'i'
+    'o' = {str} 'o'
+    'p' = {str} 'b'
+    'a' = {str} 'a'
+    's' = {str} 's'
+    'd' = {str} 'th'
+    'f' = {str} 'f'
+    'g' = {str} 'c'
+    'h' = {str} 'ch'
+    'j' = {str} 'j'
+    'k' = {str} 'c'
+    'l' = {str} 'l'
+    'z' = {str} 'z'
+    'x' = {str} 'c'
+    'c' = {str} 'c'
+    'v' = {str} 'f'
+    'b' = {str} 'b'
+    'n' = {str} 'n'
+    'm' = {str} 'm'
+    'ā' = {str} 'a'
+    'ă' = {str} 'a'
+    'ē' = {str} 'e'
+    'ĕ' = {str} 'e'
+    'ī' = {str} 'i'
+    'ĭ' = {str} 'i'
+    'ō' = {str} 'o'
+    'ŏ' = {str} 'o'
+    'ū' = {str} 'u'
+    'ŭ' = {str} 'u'
+    'ä' = {str} 'a'
+    'ë' = {str} 'e'
+    'ï' = {str} 'i'
+    'ö' = {str} 'o'
+    'ü' = {str} 'u'
+    '--endl' = {str} '--endl'
+    '\n' = {str} '--endl'
+    '|' = {str} '|'
+    ' ' = {str} '|'
+    'ph' = {str} 'f'
+    'ch' = {str} 'ch'
+    'rh' = {str} 'rh'
+    'th' = {str} 'th'
+    __len__ = {int} 49
+  4 = {SPmaxEvent} <__main__.SPmaxEvent object at 0x000002AE3AC725D0>
+  5 = {CombinationsEvent} <__main__.CombinationsEvent object at 0x000002AE3AC71ED0>
+   max_cons = {int} 2
+  6 = {RepeatEvent} <__main__.RepeatEvent object at 0x000002AE3AC72810>
+  7 = {RepeatRecountEvent} <__main__.RepeatRecountEvent object at 0x000002AE3AC71310>
+  __len__ = {int} 8
+ __len__ = {int} 3
+CombinationsEvent = {ABCMeta} <class '__main__.CombinationsEvent'>
+JoinEvent = {ABCMeta} <class '__main__.JoinEvent'>
+ModifyEvent = {ABCMeta} <class '__main__.ModifyEvent'>
+NumberEvent = {ABCMeta} <class '__main__.NumberEvent'>
+RepeatEvent = {ABCMeta} <class '__main__.RepeatEvent'>
+RepeatRecountEvent = {ABCMeta} <class '__main__.RepeatRecountEvent'>
+SPmaxEvent = {ABCMeta} <class '__main__.SPmaxEvent'>
+SameEvent = {ABCMeta} <class '__main__.SameEvent'>
+ZERO_SPACE = {str} '​'
+log = {builtin_function_or_method} <built-in function log>

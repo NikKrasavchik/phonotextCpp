@@ -1,0 +1,5 @@
+/Users/nikkk/Documents/try/phonotry/build/CMakeFiles/app.dir
+/Users/nikkk/Documents/try/phonotry/build/CMakeFiles/edit_cache.dir
+/Users/nikkk/Documents/try/phonotry/build/CMakeFiles/rebuild_cache.dir
+/Users/nikkk/Documents/try/phonotry/build/_deps/json-build/CMakeFiles/edit_cache.dir
+/Users/nikkk/Documents/try/phonotry/build/_deps/json-build/CMakeFiles/rebuild_cache.dir

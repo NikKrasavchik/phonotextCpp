@@ -1,0 +1,23 @@
+1. Принципиально ли значение для каждого ключа? (у меня к ключу привязано первое вхождение, у вас последнее)
+(
+  1 = {JoinEvent} <__main__.JoinEvent object at 0x000002AE3AC6B4D0>
+   rules = {defaultdict: 8} defaultdict(<class 'dict'>, {'a': 'ay', 'e': 'ey', 'i': 'iy', 'o': 'oy', 'y': 'yu', 'u': 'uy', 'c': 'ck', 'p': 'ph'})
+    default_factory = {type} <class 'dict'>
+    'a' = {str} 'ay'
+    'e' = {str} 'ey'
+    'i' = {str} 'iy'
+    'o' = {str} 'oy'
+    'y' = {str} 'yu'
+    'u' = {str} 'uy'
+    'c' = {str} 'ck'
+    'p' = {str} 'ph'
+    __len__ = {int} 8
+)
+
+2. Какие именно данные будут храниться в переменных у класса Letter
+
+3. Вопрос о доступе переменных класса Letter и basetext (из вне файла)
+
+4. Смысл функции get_filter_com_rus
+
+5. Хрень с getLetter() в getLetterRepr()

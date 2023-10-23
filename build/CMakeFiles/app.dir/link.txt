@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/app.dir/phonotry.cpp.o CMakeFiles/app.dir/engine/conf.cpp.o CMakeFiles/app.dir/engine/letter.cpp.o CMakeFiles/app.dir/engine/phonotext.cpp.o CMakeFiles/app.dir/engine/proccessing.cpp.o -o app 
