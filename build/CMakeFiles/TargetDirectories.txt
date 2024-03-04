@@ -1,5 +1,0 @@
-/Users/nikkk/Documents/phonotextCpp/build/CMakeFiles/app.dir
-/Users/nikkk/Documents/phonotextCpp/build/CMakeFiles/edit_cache.dir
-/Users/nikkk/Documents/phonotextCpp/build/CMakeFiles/rebuild_cache.dir
-/Users/nikkk/Documents/phonotextCpp/build/_deps/json-build/CMakeFiles/edit_cache.dir
-/Users/nikkk/Documents/phonotextCpp/build/_deps/json-build/CMakeFiles/rebuild_cache.dir
