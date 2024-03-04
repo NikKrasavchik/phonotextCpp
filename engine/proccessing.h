@@ -47,6 +47,6 @@ private:
 	void repeatProccessor();
 	std::pair<bool, double> rusFilterComb(std::vector<std::forward_list<Letter>::iterator> comb, std::vector<std::string> words);
 
-	std::__1::chrono::milliseconds ttttt;
+	std::chrono::milliseconds ttttt;
 };
 
