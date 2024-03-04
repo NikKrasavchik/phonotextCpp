@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "/Users/nikkk/Documents/try/phonotry/build/_deps/json-src"
-  "/Users/nikkk/Documents/try/phonotry/build/_deps/json-build"
-  "/Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix"
-  "/Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix/tmp"
-  "/Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp"
-  "/Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix/src"
-  "/Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp"
+  "/Users/nikkk/Documents/phonotextCpp/build/_deps/json-src"
+  "/Users/nikkk/Documents/phonotextCpp/build/_deps/json-build"
+  "/Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix"
+  "/Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix/tmp"
+  "/Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp"
+  "/Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix/src"
+  "/Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

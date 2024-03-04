@@ -53,10 +53,10 @@ RM = /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild
+CMAKE_SOURCE_DIR = /Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild
+CMAKE_BINARY_DIR = /Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild
 
 # Utility rule file for json-populate.
 
@@ -77,57 +77,57 @@ CMakeFiles/json-populate-complete: json-populate-prefix/src/json-populate-stamp/
 CMakeFiles/json-populate-complete: json-populate-prefix/src/json-populate-stamp/json-populate-build
 CMakeFiles/json-populate-complete: json-populate-prefix/src/json-populate-stamp/json-populate-install
 CMakeFiles/json-populate-complete: json-populate-prefix/src/json-populate-stamp/json-populate-test
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'json-populate'"
-	/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E make_directory /Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/CMakeFiles
-	/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E touch /Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/CMakeFiles/json-populate-complete
-	/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E touch /Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'json-populate'"
+	/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E make_directory /Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/CMakeFiles
+	/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E touch /Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/CMakeFiles/json-populate-complete
+	/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E touch /Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-done
 
 json-populate-prefix/src/json-populate-stamp/json-populate-build: json-populate-prefix/src/json-populate-stamp/json-populate-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No build step for 'json-populate'"
-	cd /Users/nikkk/Documents/try/phonotry/build/_deps/json-build && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E echo_append
-	cd /Users/nikkk/Documents/try/phonotry/build/_deps/json-build && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E touch /Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No build step for 'json-populate'"
+	cd /Users/nikkk/Documents/phonotextCpp/build/_deps/json-build && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E echo_append
+	cd /Users/nikkk/Documents/phonotextCpp/build/_deps/json-build && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E touch /Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-build
 
 json-populate-prefix/src/json-populate-stamp/json-populate-configure: json-populate-prefix/tmp/json-populate-cfgcmd.txt
 json-populate-prefix/src/json-populate-stamp/json-populate-configure: json-populate-prefix/src/json-populate-stamp/json-populate-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'json-populate'"
-	cd /Users/nikkk/Documents/try/phonotry/build/_deps/json-build && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E echo_append
-	cd /Users/nikkk/Documents/try/phonotry/build/_deps/json-build && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E touch /Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'json-populate'"
+	cd /Users/nikkk/Documents/phonotextCpp/build/_deps/json-build && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E echo_append
+	cd /Users/nikkk/Documents/phonotextCpp/build/_deps/json-build && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E touch /Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-configure
 
 json-populate-prefix/src/json-populate-stamp/json-populate-download: json-populate-prefix/src/json-populate-stamp/download-json-populate.cmake
 json-populate-prefix/src/json-populate-stamp/json-populate-download: json-populate-prefix/src/json-populate-stamp/json-populate-urlinfo.txt
 json-populate-prefix/src/json-populate-stamp/json-populate-download: json-populate-prefix/src/json-populate-stamp/json-populate-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (download, verify and extract) for 'json-populate'"
-	cd /Users/nikkk/Documents/try/phonotry/build/_deps && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -P /Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/download-json-populate.cmake
-	cd /Users/nikkk/Documents/try/phonotry/build/_deps && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -P /Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/verify-json-populate.cmake
-	cd /Users/nikkk/Documents/try/phonotry/build/_deps && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -P /Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/extract-json-populate.cmake
-	cd /Users/nikkk/Documents/try/phonotry/build/_deps && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E touch /Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (download, verify and extract) for 'json-populate'"
+	cd /Users/nikkk/Documents/phonotextCpp/build/_deps && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -P /Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/download-json-populate.cmake
+	cd /Users/nikkk/Documents/phonotextCpp/build/_deps && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -P /Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/verify-json-populate.cmake
+	cd /Users/nikkk/Documents/phonotextCpp/build/_deps && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -P /Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/extract-json-populate.cmake
+	cd /Users/nikkk/Documents/phonotextCpp/build/_deps && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E touch /Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-download
 
 json-populate-prefix/src/json-populate-stamp/json-populate-install: json-populate-prefix/src/json-populate-stamp/json-populate-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'json-populate'"
-	cd /Users/nikkk/Documents/try/phonotry/build/_deps/json-build && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E echo_append
-	cd /Users/nikkk/Documents/try/phonotry/build/_deps/json-build && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E touch /Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'json-populate'"
+	cd /Users/nikkk/Documents/phonotextCpp/build/_deps/json-build && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E echo_append
+	cd /Users/nikkk/Documents/phonotextCpp/build/_deps/json-build && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E touch /Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-install
 
 json-populate-prefix/src/json-populate-stamp/json-populate-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'json-populate'"
-	/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -Dcfgdir= -P /Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix/tmp/json-populate-mkdirs.cmake
-	/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E touch /Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'json-populate'"
+	/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -Dcfgdir= -P /Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix/tmp/json-populate-mkdirs.cmake
+	/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E touch /Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-mkdir
 
 json-populate-prefix/src/json-populate-stamp/json-populate-patch: json-populate-prefix/src/json-populate-stamp/json-populate-patch-info.txt
 json-populate-prefix/src/json-populate-stamp/json-populate-patch: json-populate-prefix/src/json-populate-stamp/json-populate-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'json-populate'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'json-populate'"
 	/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E echo_append
-	/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E touch /Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-patch
+	/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E touch /Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-patch
 
 json-populate-prefix/src/json-populate-stamp/json-populate-test: json-populate-prefix/src/json-populate-stamp/json-populate-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No test step for 'json-populate'"
-	cd /Users/nikkk/Documents/try/phonotry/build/_deps/json-build && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E echo_append
-	cd /Users/nikkk/Documents/try/phonotry/build/_deps/json-build && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E touch /Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-test
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No test step for 'json-populate'"
+	cd /Users/nikkk/Documents/phonotextCpp/build/_deps/json-build && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E echo_append
+	cd /Users/nikkk/Documents/phonotextCpp/build/_deps/json-build && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E touch /Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-test
 
 json-populate-prefix/src/json-populate-stamp/json-populate-update: json-populate-prefix/src/json-populate-stamp/json-populate-update-info.txt
 json-populate-prefix/src/json-populate-stamp/json-populate-update: json-populate-prefix/src/json-populate-stamp/json-populate-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "No update step for 'json-populate'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "No update step for 'json-populate'"
 	/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E echo_append
-	/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E touch /Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-update
+	/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E touch /Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-update
 
 json-populate: CMakeFiles/json-populate
 json-populate: CMakeFiles/json-populate-complete
@@ -151,6 +151,6 @@ CMakeFiles/json-populate.dir/clean:
 .PHONY : CMakeFiles/json-populate.dir/clean
 
 CMakeFiles/json-populate.dir/depend:
-	cd /Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild /Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild /Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild /Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild /Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/CMakeFiles/json-populate.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild /Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild /Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild /Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild /Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/CMakeFiles/json-populate.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/json-populate.dir/depend
 

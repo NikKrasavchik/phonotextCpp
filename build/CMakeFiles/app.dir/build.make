@@ -53,10 +53,10 @@ RM = /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/nikkk/Documents/try/phonotry
+CMAKE_SOURCE_DIR = /Users/nikkk/Documents/phonotextCpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/nikkk/Documents/try/phonotry/build
+CMAKE_BINARY_DIR = /Users/nikkk/Documents/phonotextCpp/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/app.dir/depend.make
@@ -70,74 +70,74 @@ include CMakeFiles/app.dir/progress.make
 include CMakeFiles/app.dir/flags.make
 
 CMakeFiles/app.dir/phonotry.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/phonotry.cpp.o: /Users/nikkk/Documents/try/phonotry/phonotry.cpp
+CMakeFiles/app.dir/phonotry.cpp.o: /Users/nikkk/Documents/phonotextCpp/phonotry.cpp
 CMakeFiles/app.dir/phonotry.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nikkk/Documents/try/phonotry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.dir/phonotry.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/phonotry.cpp.o -MF CMakeFiles/app.dir/phonotry.cpp.o.d -o CMakeFiles/app.dir/phonotry.cpp.o -c /Users/nikkk/Documents/try/phonotry/phonotry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nikkk/Documents/phonotextCpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.dir/phonotry.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/phonotry.cpp.o -MF CMakeFiles/app.dir/phonotry.cpp.o.d -o CMakeFiles/app.dir/phonotry.cpp.o -c /Users/nikkk/Documents/phonotextCpp/phonotry.cpp
 
 CMakeFiles/app.dir/phonotry.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/phonotry.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nikkk/Documents/try/phonotry/phonotry.cpp > CMakeFiles/app.dir/phonotry.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nikkk/Documents/phonotextCpp/phonotry.cpp > CMakeFiles/app.dir/phonotry.cpp.i
 
 CMakeFiles/app.dir/phonotry.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/phonotry.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nikkk/Documents/try/phonotry/phonotry.cpp -o CMakeFiles/app.dir/phonotry.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nikkk/Documents/phonotextCpp/phonotry.cpp -o CMakeFiles/app.dir/phonotry.cpp.s
 
 CMakeFiles/app.dir/engine/conf.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/engine/conf.cpp.o: /Users/nikkk/Documents/try/phonotry/engine/conf.cpp
+CMakeFiles/app.dir/engine/conf.cpp.o: /Users/nikkk/Documents/phonotextCpp/engine/conf.cpp
 CMakeFiles/app.dir/engine/conf.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nikkk/Documents/try/phonotry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/engine/conf.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/engine/conf.cpp.o -MF CMakeFiles/app.dir/engine/conf.cpp.o.d -o CMakeFiles/app.dir/engine/conf.cpp.o -c /Users/nikkk/Documents/try/phonotry/engine/conf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nikkk/Documents/phonotextCpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/engine/conf.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/engine/conf.cpp.o -MF CMakeFiles/app.dir/engine/conf.cpp.o.d -o CMakeFiles/app.dir/engine/conf.cpp.o -c /Users/nikkk/Documents/phonotextCpp/engine/conf.cpp
 
 CMakeFiles/app.dir/engine/conf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/engine/conf.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nikkk/Documents/try/phonotry/engine/conf.cpp > CMakeFiles/app.dir/engine/conf.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nikkk/Documents/phonotextCpp/engine/conf.cpp > CMakeFiles/app.dir/engine/conf.cpp.i
 
 CMakeFiles/app.dir/engine/conf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/engine/conf.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nikkk/Documents/try/phonotry/engine/conf.cpp -o CMakeFiles/app.dir/engine/conf.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nikkk/Documents/phonotextCpp/engine/conf.cpp -o CMakeFiles/app.dir/engine/conf.cpp.s
 
 CMakeFiles/app.dir/engine/letter.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/engine/letter.cpp.o: /Users/nikkk/Documents/try/phonotry/engine/letter.cpp
+CMakeFiles/app.dir/engine/letter.cpp.o: /Users/nikkk/Documents/phonotextCpp/engine/letter.cpp
 CMakeFiles/app.dir/engine/letter.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nikkk/Documents/try/phonotry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/engine/letter.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/engine/letter.cpp.o -MF CMakeFiles/app.dir/engine/letter.cpp.o.d -o CMakeFiles/app.dir/engine/letter.cpp.o -c /Users/nikkk/Documents/try/phonotry/engine/letter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nikkk/Documents/phonotextCpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/engine/letter.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/engine/letter.cpp.o -MF CMakeFiles/app.dir/engine/letter.cpp.o.d -o CMakeFiles/app.dir/engine/letter.cpp.o -c /Users/nikkk/Documents/phonotextCpp/engine/letter.cpp
 
 CMakeFiles/app.dir/engine/letter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/engine/letter.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nikkk/Documents/try/phonotry/engine/letter.cpp > CMakeFiles/app.dir/engine/letter.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nikkk/Documents/phonotextCpp/engine/letter.cpp > CMakeFiles/app.dir/engine/letter.cpp.i
 
 CMakeFiles/app.dir/engine/letter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/engine/letter.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nikkk/Documents/try/phonotry/engine/letter.cpp -o CMakeFiles/app.dir/engine/letter.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nikkk/Documents/phonotextCpp/engine/letter.cpp -o CMakeFiles/app.dir/engine/letter.cpp.s
 
 CMakeFiles/app.dir/engine/phonotext.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/engine/phonotext.cpp.o: /Users/nikkk/Documents/try/phonotry/engine/phonotext.cpp
+CMakeFiles/app.dir/engine/phonotext.cpp.o: /Users/nikkk/Documents/phonotextCpp/engine/phonotext.cpp
 CMakeFiles/app.dir/engine/phonotext.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nikkk/Documents/try/phonotry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/app.dir/engine/phonotext.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/engine/phonotext.cpp.o -MF CMakeFiles/app.dir/engine/phonotext.cpp.o.d -o CMakeFiles/app.dir/engine/phonotext.cpp.o -c /Users/nikkk/Documents/try/phonotry/engine/phonotext.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nikkk/Documents/phonotextCpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/app.dir/engine/phonotext.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/engine/phonotext.cpp.o -MF CMakeFiles/app.dir/engine/phonotext.cpp.o.d -o CMakeFiles/app.dir/engine/phonotext.cpp.o -c /Users/nikkk/Documents/phonotextCpp/engine/phonotext.cpp
 
 CMakeFiles/app.dir/engine/phonotext.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/engine/phonotext.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nikkk/Documents/try/phonotry/engine/phonotext.cpp > CMakeFiles/app.dir/engine/phonotext.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nikkk/Documents/phonotextCpp/engine/phonotext.cpp > CMakeFiles/app.dir/engine/phonotext.cpp.i
 
 CMakeFiles/app.dir/engine/phonotext.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/engine/phonotext.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nikkk/Documents/try/phonotry/engine/phonotext.cpp -o CMakeFiles/app.dir/engine/phonotext.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nikkk/Documents/phonotextCpp/engine/phonotext.cpp -o CMakeFiles/app.dir/engine/phonotext.cpp.s
 
 CMakeFiles/app.dir/engine/proccessing.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/engine/proccessing.cpp.o: /Users/nikkk/Documents/try/phonotry/engine/proccessing.cpp
+CMakeFiles/app.dir/engine/proccessing.cpp.o: /Users/nikkk/Documents/phonotextCpp/engine/proccessing.cpp
 CMakeFiles/app.dir/engine/proccessing.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nikkk/Documents/try/phonotry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/app.dir/engine/proccessing.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/engine/proccessing.cpp.o -MF CMakeFiles/app.dir/engine/proccessing.cpp.o.d -o CMakeFiles/app.dir/engine/proccessing.cpp.o -c /Users/nikkk/Documents/try/phonotry/engine/proccessing.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nikkk/Documents/phonotextCpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/app.dir/engine/proccessing.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/engine/proccessing.cpp.o -MF CMakeFiles/app.dir/engine/proccessing.cpp.o.d -o CMakeFiles/app.dir/engine/proccessing.cpp.o -c /Users/nikkk/Documents/phonotextCpp/engine/proccessing.cpp
 
 CMakeFiles/app.dir/engine/proccessing.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/engine/proccessing.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nikkk/Documents/try/phonotry/engine/proccessing.cpp > CMakeFiles/app.dir/engine/proccessing.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nikkk/Documents/phonotextCpp/engine/proccessing.cpp > CMakeFiles/app.dir/engine/proccessing.cpp.i
 
 CMakeFiles/app.dir/engine/proccessing.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/engine/proccessing.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nikkk/Documents/try/phonotry/engine/proccessing.cpp -o CMakeFiles/app.dir/engine/proccessing.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nikkk/Documents/phonotextCpp/engine/proccessing.cpp -o CMakeFiles/app.dir/engine/proccessing.cpp.s
 
 # Object files for target app
 app_OBJECTS = \
@@ -157,7 +157,7 @@ app: CMakeFiles/app.dir/engine/phonotext.cpp.o
 app: CMakeFiles/app.dir/engine/proccessing.cpp.o
 app: CMakeFiles/app.dir/build.make
 app: CMakeFiles/app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/nikkk/Documents/try/phonotry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/nikkk/Documents/phonotextCpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -169,6 +169,6 @@ CMakeFiles/app.dir/clean:
 .PHONY : CMakeFiles/app.dir/clean
 
 CMakeFiles/app.dir/depend:
-	cd /Users/nikkk/Documents/try/phonotry/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/nikkk/Documents/try/phonotry /Users/nikkk/Documents/try/phonotry /Users/nikkk/Documents/try/phonotry/build /Users/nikkk/Documents/try/phonotry/build /Users/nikkk/Documents/try/phonotry/build/CMakeFiles/app.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/nikkk/Documents/phonotextCpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/nikkk/Documents/phonotextCpp /Users/nikkk/Documents/phonotextCpp /Users/nikkk/Documents/phonotextCpp/build /Users/nikkk/Documents/phonotextCpp/build /Users/nikkk/Documents/phonotextCpp/build/CMakeFiles/app.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/app.dir/depend
 

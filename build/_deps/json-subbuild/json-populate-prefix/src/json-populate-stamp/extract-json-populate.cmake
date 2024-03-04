@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION 3.5)
 
 # Make file names absolute:
 #
-get_filename_component(filename "/Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz" ABSOLUTE)
-get_filename_component(directory "/Users/nikkk/Documents/try/phonotry/build/_deps/json-src" ABSOLUTE)
+get_filename_component(filename "/Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz" ABSOLUTE)
+get_filename_component(directory "/Users/nikkk/Documents/phonotextCpp/build/_deps/json-src" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

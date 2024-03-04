@@ -1,4 +1,4 @@
-# Install script for directory: /Users/nikkk/Documents/try/phonotry/build/_deps/json-src
+# Install script for directory: /Users/nikkk/Documents/phonotextCpp/build/_deps/json-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

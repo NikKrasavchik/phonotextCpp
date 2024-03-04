@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=url
-command=/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake;-P;/Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/download-json-populate.cmake;COMMAND;/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake;-P;/Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/verify-json-populate.cmake;COMMAND;/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake;-P;/Users/nikkk/Documents/try/phonotry/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/extract-json-populate.cmake
-source_dir=/Users/nikkk/Documents/try/phonotry/build/_deps/json-src
-work_dir=/Users/nikkk/Documents/try/phonotry/build/_deps
+command=/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake;-P;/Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/download-json-populate.cmake;COMMAND;/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake;-P;/Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/verify-json-populate.cmake;COMMAND;/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake;-P;/Users/nikkk/Documents/phonotextCpp/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/extract-json-populate.cmake
+source_dir=/Users/nikkk/Documents/phonotextCpp/build/_deps/json-src
+work_dir=/Users/nikkk/Documents/phonotextCpp/build/_deps
 url(s)=https://github.com/nlohmann/json/releases/download/v3.11.2/json.tar.xz
 hash=
 no_extract=

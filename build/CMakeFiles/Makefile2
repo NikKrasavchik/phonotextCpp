@@ -54,10 +54,10 @@ RM = /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/nikkk/Documents/try/phonotry
+CMAKE_SOURCE_DIR = /Users/nikkk/Documents/phonotextCpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/nikkk/Documents/try/phonotry/build
+CMAKE_BINARY_DIR = /Users/nikkk/Documents/phonotextCpp/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -98,14 +98,14 @@ _deps/json-build/clean:
 CMakeFiles/app.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nikkk/Documents/try/phonotry/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nikkk/Documents/phonotextCpp/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target app"
 .PHONY : CMakeFiles/app.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikkk/Documents/try/phonotry/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikkk/Documents/phonotextCpp/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/app.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikkk/Documents/try/phonotry/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikkk/Documents/phonotextCpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/app.dir/rule
 
 # Convenience name for target.
