@@ -6,12 +6,17 @@ Conf::Conf()
 
 Conf::Conf(std::string lng)
 {
+    std::string localPath = "../";
+#ifdef _WIN32
+    localPath = "../../";
+#endif
+
     if (lng == "rus")
-        makeConfig("../lng json/russian.json");
+        makeConfig(localPath + "/lng json/russian.json");
     else if (lng == "eng")
-        makeConfig("../lng json/english.json");
+        makeConfig(localPath + "/lng json/english.json");
     else if (lng == "lat")
-        makeConfig("../lng json/latin.json");
+        makeConfig(localPath + "/lng json/latin.json");
 }
 
 Conf::~Conf()
