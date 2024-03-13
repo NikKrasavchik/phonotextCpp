@@ -1,7 +1,7 @@
-f = open("in.txt")
+f = open("texts/Алине _ Александр Бестужев")
 lines = f.readlines()
 f.close()
-f = open("out.txt", 'w')
+f = open("texts/Алине _ Александр Бестужев", 'w')
 
 for i in range(len(lines)):
   str = ""

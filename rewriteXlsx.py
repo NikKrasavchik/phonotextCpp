@@ -1,7 +1,14 @@
 import pandas as pd
+import sys
+
+textNames = []
 
 def dissambleXlsx(xlsxName):
+    global textNames
+
     xlsx = pd.read_excel(xlsxName)
+
+    textNames = list(xlsx.iloc[:,0])
 
     keys = xlsx.columns.tolist()
     map = dict.fromkeys(xlsx.columns.tolist())
@@ -47,19 +54,22 @@ def dissambleJson(jsonName, xlsxKeyNames, xlsxValues):
     return resultKeyNames, resultValues
 
 def rewriteXlsx(xlsxName, resultKeyNames, resultValues):
-        
+    global textNames
+    textNames.append(sys.orig_argv[2])
+
     resultDictionary = dict.fromkeys(resultKeyNames)
 
     for i in range(len(resultKeyNames)):
         resultDictionary[resultKeyNames[i]] = resultValues[i]
 
     df = pd.DataFrame(resultDictionary)
+    df.index = textNames
 
-    df.to_excel(xlsxName, sheet_name=' test')
+    df.to_excel(xlsxName, sheet_name='test')
 
 def main():
-    xlsxName = 'C:/Users/nikita.stachinskiy/Desktop/phonotextCpp/template.xlsx'
-    jsonName = 'C:/Users/nikita.stachinskiy/Desktop/phonotextCpp/data/outJson.json'
+    xlsxName = '../template.xlsx'
+    jsonName = '../data/outJson.json'
 
     xlsxKeyNames, xlsxValues = dissambleXlsx(xlsxName)
     resultKeyNames, resultValues = dissambleJson(jsonName, xlsxKeyNames, xlsxValues)
