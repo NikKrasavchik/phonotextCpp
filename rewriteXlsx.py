@@ -2,13 +2,15 @@ import pandas as pd
 import sys
 
 textNames = []
+textAuthors = []
 
 def dissambleXlsx(xlsxName):
-    global textNames
+    global textNames, textAuthors
 
     xlsx = pd.read_excel(xlsxName)
-
-    textNames = list(xlsx.iloc[:,0])
+    
+    textAuthors = list(xlsx.iloc[:,1])
+    textNames = list(xlsx.iloc[:,2])
 
     keys = xlsx.columns.tolist()
     map = dict.fromkeys(xlsx.columns.tolist())
@@ -54,21 +56,33 @@ def dissambleJson(jsonName, xlsxKeyNames, xlsxValues):
     return resultKeyNames, resultValues
 
 def rewriteXlsx(xlsxName, resultKeyNames, resultValues):
-    global textNames
-    textNames.append(sys.orig_argv[2])
+    global textNames, textAuthors
 
-    resultDictionary = dict.fromkeys(resultKeyNames)
+    arg = sys.orig_argv[2].split('_')
+
+    name = arg[0]
+    author = arg[1]
+    
+    textNames.append(name)
+    textAuthors.append(author)
+
+    resultDictionary = {'Author': None, 'Name': None}
+    resultDictionary.update(dict.fromkeys(resultKeyNames))
 
     for i in range(len(resultKeyNames)):
-        resultDictionary[resultKeyNames[i]] = resultValues[i]
+        if resultKeyNames[i] == 'Author':
+            resultDictionary[resultKeyNames[i]] = textAuthors
+        elif resultKeyNames[i] == 'Name':
+            resultDictionary[resultKeyNames[i]] = textNames
+        else:
+            resultDictionary[resultKeyNames[i]] = resultValues[i]
 
     df = pd.DataFrame(resultDictionary)
-    df.index = textNames
 
     df.to_excel(xlsxName, sheet_name='test')
 
 def main():
-    xlsxName = '../template.xlsx'
+    xlsxName = '../stats.xlsx'
     jsonName = '../data/outJson.json'
 
     xlsxKeyNames, xlsxValues = dissambleXlsx(xlsxName)

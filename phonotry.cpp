@@ -8,7 +8,6 @@ int main(int argc, char* argv[])
 {
     std::string textName = argv[1];
 
-    std::cout << "Proccess started";
     if (argc != 2)
         return 0;
 	auto begin = std::chrono::steady_clock::now();
