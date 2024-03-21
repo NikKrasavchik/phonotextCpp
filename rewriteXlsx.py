@@ -82,8 +82,8 @@ def rewriteXlsx(xlsxName, resultKeyNames, resultValues):
     df.to_excel(xlsxName, sheet_name='test')
 
 def main():
-    xlsxName = '../stats.xlsx'
-    jsonName = '../data/outJson.json'
+    xlsxName = '../../stats.xlsx'
+    jsonName = '../../data/outJson.json'
 
     xlsxKeyNames, xlsxValues = dissambleXlsx(xlsxName)
     resultKeyNames, resultValues = dissambleJson(jsonName, xlsxKeyNames, xlsxValues)
