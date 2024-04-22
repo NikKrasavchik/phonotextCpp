@@ -565,7 +565,7 @@ std::pair<bool, double> Proccessing::rusFilterComb(std::vector<std::forward_list
     pwr += (comb[2]->number - comb[0]->number - count == 2 ? 5 : 0); // Расположение гласных без пробелов
     pwr += (count == 0 ? 2 : 0); // количество пробелов
     count = 0;
-    for (int i = txt.size() - 3; i < txt.size(); i++) // подсчёт количества букв "й" в последних трёх символах получаемого текста
+    for (size_t i = txt.size() - 3; i < txt.size(); i++) // подсчёт количества букв "й" в последних трёх символах получаемого текста
         if ((txt[i] == "й"[0]) && (txt[i] == "й"[1]))
             count++;
     pwr += (count == 0 ? 4 : 0);
@@ -722,17 +722,24 @@ void Proccessing::print(std::string filename)
 void Proccessing::createJson(std::string filename)
 {
     std::string printable = "";
+    int textLength;
     for (auto it = pt.basetext.begin(); it != pt.basetext.end(); it++)
+    {
         printable += it->printable;
+        textLength = it->number;
+    }
+    std::cout << textLength;
 
 
     std::string str = "{\n";
+    str += "\t\"Text length\": " + std::to_string(textLength) + ",\n";
     for (auto& i : pt.repeats)
     {
         std::string key = "";
         std::string power = "";
         std::string count = "";
         std::string letters = ""; // удалить повторяющиеся
+        std::string numbers = "";
         std::string words = "";
         std::vector<std::string> combs;
 
@@ -740,7 +747,12 @@ void Proccessing::createJson(std::string filename)
         power = std::to_string(i.second.power);
         count = std::to_string(i.second.count);
         for (int j = 0; j < i.second.letters.size(); j++)
+        {
             letters += i.second.letters[j].origin;
+            numbers += std::to_string(i.second.letters[j].number) + " ";
+        }
+        if (numbers.size() != 0)
+            numbers.erase(numbers.size()-1);
         for (auto& j : i.second._words)
             words += j;
         for (int j = 0; j < i.second.combs.size(); j++)
@@ -754,19 +766,19 @@ void Proccessing::createJson(std::string filename)
         nlohmann::json tmpOutJson = {
             {"printable", printable},
             {"repeat", {
-                {"key", key},
                 {"power", power},
                 {"count", count},
                 {"letters", letters},
+                {"numbers", numbers},
                 {"words", words}
             }}
         };
 
         str += "\t\"" + key + "\": {\n";
-        str += "\t\t\"key\": \"" + key + "\",\n";
         str += "\t\t\"power\": \"" + power + "\",\n";
         str += "\t\t\"count\": \"" + count + "\",\n";
         str += "\t\t\"letters\": \"" + letters + "\",\n";
+        str += "\t\t\"numbers\": \"" + numbers + "\",\n";
         str += "\t\t\"words\": \"" + words + "\",\n";
         str += "\t\t\"combs\": [";
         for (int j = 0; j < combs.size(); j++)
@@ -777,7 +789,8 @@ void Proccessing::createJson(std::string filename)
         str += "\t},\n";
         outJson.push_back(tmpOutJson);
     }
-    str += "}\n";
+    str.erase(str.size()-2);
+    str += "\n}\n";
 
     std::ofstream fout;
     fout.open(filename);

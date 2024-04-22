@@ -19,7 +19,7 @@ int main(int argc, char* argv[])
 #endif
 
     std::ifstream fin;
-    fin.open(localPath + "texts/" + textName, std::ios_base::in);
+    fin.open(localPath + "data/" + textName, std::ios_base::in);
     if (!fin.is_open()){return 0;};
     //std::cout << "start\n";
 
@@ -27,7 +27,7 @@ int main(int argc, char* argv[])
 
     while (!fin.eof())
     {
-        std::string line;
+        std::string line; 
         std::getline(fin, line);
         data += line + '\n';
     }
@@ -44,8 +44,8 @@ int main(int argc, char* argv[])
     auto elapsed_ms = std::chrono::duration_cast<std::chrono::milliseconds>(end - begin);
     //std::cout << "The time for proccessing: " << elapsed_ms.count() << " ms\n";
 
-    std::string pythonQuery = "python ../../rewriteXlsx.py \"" + textName + "\"";
-    system(pythonQuery.c_str());
+    //std::string pythonQuery = "python ../../rewriteXlsx.py \"" + textName + "\"";
+    //system(pythonQuery.c_str());
 
     //std::cout << "Full time: " << elapsed_ms.count() << " ms\n";
     return 0;
