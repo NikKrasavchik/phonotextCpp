@@ -31,6 +31,7 @@ public:
 	std::vector<std::vector<std::vector<std::forward_list<Letter>::iterator>>> syllableCombinations;
 	std::map<std::string, Repeat> repeats;
 
+    int count;
 
 	std::pair<int, int> countLetters();
 	std::string getOrigin();

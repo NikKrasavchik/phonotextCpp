@@ -230,7 +230,8 @@ void Proccessing::numberProccessor()
         i++;
         num++;
         it->w_pos = space_pos; // Возникала ощибка с этим, а именно, значения не сохранялись
-    }
+    };
+    std::cout << j << std::endl;
 }
 
 // Нахождение итераторов гласных и добавление возврат массива со всеми этими итераторами
@@ -572,7 +573,7 @@ std::pair<bool, double> Proccessing::rusFilterComb(std::vector<std::forward_list
     pwr += (!comb[0]->w_pos || !comb[1]->w_pos || !comb[2]->w_pos ? 1 : 0); // Проверка на то, является ли символы из комбинации первым в слове
     pwr /= 15;
 
-    return std::make_pair(min_pwr <= pwr <= max_pwr, pwr);
+    return std::make_pair(min_pwr <= pwr && pwr <= max_pwr, pwr);
 }
 
 // Вывод

@@ -33,6 +33,7 @@ int main()
 
     proc.createJson("../data/outJson.json");
     proc.print("../data/out.txt");
+    std::cout << pt.count << std::endl;
 
     auto end = std::chrono::steady_clock::now();
     auto elapsed_ms = std::chrono::duration_cast<std::chrono::milliseconds>(end - begin);
